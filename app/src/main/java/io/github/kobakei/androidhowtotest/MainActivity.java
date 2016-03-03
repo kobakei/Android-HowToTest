@@ -27,4 +27,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BrowserActivity.class);
         startActivity(intent);
     }
+
+    @OnClick(R.id.button3)
+    void onButton3Clicked() {
+        Intent intent = new Intent(this, ApiActivity.class);
+        startActivity(intent);
+    }
 }

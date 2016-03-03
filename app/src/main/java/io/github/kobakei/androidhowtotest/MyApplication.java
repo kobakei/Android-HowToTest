@@ -2,27 +2,27 @@ package io.github.kobakei.androidhowtotest;
 
 import android.app.Application;
 
-import io.github.kobakei.androidhowtotest.di.DaggerSampleComponent;
-import io.github.kobakei.androidhowtotest.di.SampleComponent;
-import io.github.kobakei.androidhowtotest.di.SampleModule;
+import io.github.kobakei.androidhowtotest.di.DaggerMyComponent;
+import io.github.kobakei.androidhowtotest.di.MyComponent;
+import io.github.kobakei.androidhowtotest.di.AdditionModule;
 
 /**
  * Created by keisuke on 16/03/03.
  */
 public class MyApplication extends Application {
 
-    private SampleComponent component;
+    private MyComponent component;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        component = DaggerSampleComponent.builder()
-                .sampleModule(new SampleModule())
+        component = DaggerMyComponent.builder()
+                .sampleModule(new AdditionModule())
                 .build();
     }
 
-    public SampleComponent getComponent() {
+    public MyComponent getComponent() {
         return component;
     }
 }

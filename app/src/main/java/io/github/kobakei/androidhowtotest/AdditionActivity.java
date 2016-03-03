@@ -10,7 +10,7 @@ import javax.inject.Inject;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import io.github.kobakei.androidhowtotest.di.SampleComponent;
+import io.github.kobakei.androidhowtotest.di.MyComponent;
 import io.github.kobakei.androidhowtotest.model.Addition;
 
 public class AdditionActivity extends AppCompatActivity {
@@ -32,7 +32,7 @@ public class AdditionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addition);
         ButterKnife.bind(this);
-        SampleComponent component = ((MyApplication)getApplication()).getComponent();
+        MyComponent component = ((MyApplication)getApplication()).getComponent();
         component.inject(this);
     }
 
