@@ -2,13 +2,14 @@ package io.github.kobakei.androidhowtotest;
 
 import android.app.Application;
 
-import io.github.kobakei.androidhowtotest.di.ApiModule;
 import io.github.kobakei.androidhowtotest.di.DaggerMyComponent;
 import io.github.kobakei.androidhowtotest.di.MyComponent;
-import io.github.kobakei.androidhowtotest.di.AdditionModule;
-import io.github.kobakei.androidhowtotest.di.UseCaseModule;
 
 /**
+ * Application class.
+ * In onCreate, it creates Dagger object graph.
+ * Activity classes can access Dagger component through this Application class.
+ *
  * Created by keisuke on 16/03/03.
  */
 public class MyApplication extends Application {
