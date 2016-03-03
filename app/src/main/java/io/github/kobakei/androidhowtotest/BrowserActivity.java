@@ -1,30 +1,26 @@
 package io.github.kobakei.androidhowtotest;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class BrowserActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_browser);
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.button1)
-    void onButton1Clicked() {
-        Intent intent = new Intent(this, AdditionActivity.class);
-        startActivity(intent);
-    }
-
-    @OnClick(R.id.button2)
-    void onButton2Clicked() {
-        Intent intent = new Intent(this, BrowserActivity.class);
+    @OnClick(R.id.button)
+    void onButtonClicked() {
+        Uri uri = Uri.parse("https://google.com");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
 }
