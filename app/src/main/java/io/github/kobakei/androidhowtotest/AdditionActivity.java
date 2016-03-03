@@ -5,9 +5,12 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import javax.inject.Inject;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.github.kobakei.androidhowtotest.di.SampleComponent;
 import io.github.kobakei.androidhowtotest.model.Addition;
 
 public class AdditionActivity extends AppCompatActivity {
@@ -21,11 +24,16 @@ public class AdditionActivity extends AppCompatActivity {
     @Bind(R.id.textView)
     TextView textView;
 
+    @Inject
+    Addition addition;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addition);
         ButterKnife.bind(this);
+        SampleComponent component = ((MyApplication)getApplication()).getComponent();
+        component.inject(this);
     }
 
     @OnClick(R.id.button1)
@@ -33,7 +41,7 @@ public class AdditionActivity extends AppCompatActivity {
         try {
             int num1 = Integer.parseInt(editText1.getText().toString());
             int num2 = Integer.parseInt(editText2.getText().toString());
-            int sum = Addition.add(num1, num2);
+            int sum = addition.add(num1, num2);
             textView.setText(String.valueOf(sum));
         } catch (NumberFormatException e) {
             textView.setText("ERROR");
