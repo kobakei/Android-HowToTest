@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest;
+package io.github.kobakei.androidhowtotest.model;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -9,8 +9,6 @@ import static junit.framework.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import io.github.kobakei.androidhowtotest.model.PackageNameManager;
 
 /**
  * Unit test running on device or emulator.

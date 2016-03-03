@@ -19,12 +19,9 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // Object graph for dependency injection
-        component = DaggerMyComponent.builder()
-                .additionModule(new AdditionModule())
-                .apiModule(new ApiModule())
-                .useCaseModule(new UseCaseModule())
-                .build();
+        // Create object graph for dependency injection.
+        // Modules which are declared in MyComponent.java will be used.
+        component = DaggerMyComponent.builder().build();
     }
 
     /**

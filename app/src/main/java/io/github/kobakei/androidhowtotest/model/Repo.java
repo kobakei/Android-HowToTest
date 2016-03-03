@@ -5,8 +5,16 @@ package io.github.kobakei.androidhowtotest.model;
  */
 public class Repo {
     public long id;
-    public String name;
     public String full_name;
-    public String language;
     public int forks_count;
+
+    public Repo() {
+
+    }
+
+    public Repo(long id, String fullName, int forksCount) {
+        this.id = id;
+        this.full_name = fullName;
+        this.forks_count = forksCount;
+    }
 }

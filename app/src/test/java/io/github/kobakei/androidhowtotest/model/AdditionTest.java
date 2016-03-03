@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest;
+package io.github.kobakei.androidhowtotest.model;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
