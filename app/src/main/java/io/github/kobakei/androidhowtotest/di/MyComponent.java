@@ -12,7 +12,7 @@ import io.github.kobakei.androidhowtotest.ApiActivity;
  * Created by keisuke on 16/03/03.
  */
 @Singleton
-@Component(modules = {AdditionModule.class, ApiModule.class})
+@Component(modules = {AdditionModule.class, ApiModule.class, UseCaseModule.class})
 public interface MyComponent {
     void inject(AdditionActivity target);
     void inject(ApiActivity target);

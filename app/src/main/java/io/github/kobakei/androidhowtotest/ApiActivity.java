@@ -11,6 +11,7 @@ import javax.inject.Inject;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import io.github.kobakei.androidhowtotest.model.GitHubService;
+import io.github.kobakei.androidhowtotest.model.GitHubUseCase;
 import io.github.kobakei.androidhowtotest.model.Repo;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -22,7 +23,7 @@ public class ApiActivity extends AppCompatActivity {
     TextView textView;
 
     @Inject
-    GitHubService gitHubService;
+    GitHubUseCase gitHubUseCase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,25 +32,10 @@ public class ApiActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         ((MyApplication)getApplication()).getComponent().inject(this);
 
-        // Calling api client from activity is not recommended but this is sample...
-        Call<List<Repo>> call = gitHubService.listRepos("kobakei");
-        call.enqueue(new Callback<List<Repo>>() {
+        gitHubUseCase.getTotalForkCount("kobakei", new GitHubUseCase.Callback() {
             @Override
-            public void onResponse(Call<List<Repo>> call, Response<List<Repo>> response) {
-                if (response.isSuccess()) {
-                    String text = "";
-                    for (Repo repo : response.body()) {
-                        text += repo.full_name + "\n";
-                    }
-                    textView.setText(text);
-                } else {
-                    textView.setText("ERROR");
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Repo>> call, Throwable t) {
-                textView.setText("ERROR");
+            public void onTotalForkCountReturned(int count) {
+                textView.setText("Total fork count is " + count);
             }
         });
     }
