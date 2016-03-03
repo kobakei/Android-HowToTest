@@ -18,13 +18,11 @@ import io.github.kobakei.androidhowtotest.BuildConfig;
 import io.github.kobakei.androidhowtotest.di.DaggerMyComponent;
 import io.github.kobakei.androidhowtotest.di.MockApiModule;
 import io.github.kobakei.androidhowtotest.di.MyComponent;
-import retrofit2.Call;
-import retrofit2.http.Path;
-import retrofit2.mock.Calls;
 
 /**
  * Unit test of GitHubUseCase.
  * GitHubUseCase depends on API client therefore this test inject mock API client with Dagger2.
+ * MyComponent depends on Android framework therefore this test runs with Robolectric.
  * Created by keisuke on 16/03/03.
  */
 @RunWith(RobolectricGradleTestRunner.class)
