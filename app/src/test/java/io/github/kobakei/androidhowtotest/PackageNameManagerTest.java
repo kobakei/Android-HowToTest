@@ -1,16 +1,16 @@
 package io.github.kobakei.androidhowtotest;
 
-import android.app.Activity;
-import android.app.RobolectricActivityManager;
 import android.os.Build;
-
-import static junit.framework.Assert.*;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
+
+import io.github.kobakei.androidhowtotest.model.PackageNameManager;
+
+import static junit.framework.Assert.assertEquals;
 
 /**
  * Unit test for a class depending on Android framework with Robolectric.

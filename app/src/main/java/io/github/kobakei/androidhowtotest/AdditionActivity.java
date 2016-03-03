@@ -8,6 +8,7 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.github.kobakei.androidhowtotest.model.Addition;
 
 public class AdditionActivity extends AppCompatActivity {
 
@@ -32,7 +33,8 @@ public class AdditionActivity extends AppCompatActivity {
         try {
             int num1 = Integer.parseInt(editText1.getText().toString());
             int num2 = Integer.parseInt(editText2.getText().toString());
-            textView.setText(String.valueOf(num1 + num2));
+            int sum = Addition.add(num1, num2);
+            textView.setText(String.valueOf(sum));
         } catch (NumberFormatException e) {
             textView.setText("ERROR");
         }
