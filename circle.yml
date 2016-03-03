@@ -13,6 +13,8 @@ test:
         parallel: true
     # wait for it to have booted
     - circle-android wait-for-boot
+    # This sleep should avoid the com.android.builder.testing.api.DeviceException: com.android.ddmlib.ShellCommandUnresponsiveException
+    - sleep 60
     # run tests  against the emulator.
     - ./gradlew connectedAndroidTest
     # copy the build outputs to artifacts
