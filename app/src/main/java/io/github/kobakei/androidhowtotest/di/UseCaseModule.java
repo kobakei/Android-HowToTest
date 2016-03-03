@@ -8,6 +8,8 @@ import io.github.kobakei.androidhowtotest.model.GitHubService;
 import io.github.kobakei.androidhowtotest.model.GitHubUseCase;
 
 /**
+ * Dagger module to proviode use case (business logic).
+ * This class needs other module which provides api client.
  * Created by keisuke on 16/03/03.
  */
 @Module(includes = ApiModule.class)
