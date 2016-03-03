@@ -16,6 +16,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -46,6 +47,6 @@ public class BrowserActivityTest {
 
         // Check if current app is chrome
         UiObject2 currentApp = uiDevice.findObject(By.pkg("com.android.chrome"));
-        assertTrue(currentApp != null);
+        assertNotNull(currentApp);
     }
 }

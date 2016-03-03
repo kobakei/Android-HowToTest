@@ -10,6 +10,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import io.github.kobakei.androidhowtotest.model.PackageNameManager;
+
 /**
  * Unit test running on device or emulator.
  * Created by keisuke on 16/03/03.
