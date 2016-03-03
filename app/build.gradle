@@ -37,6 +37,9 @@ dependencies {
     // -----------------------------------
     testCompile 'junit:junit:4.12'
 
+    // Robolectric
+    testCompile "org.robolectric:robolectric:3.0"
+
     // -----------------------------------
     // dependencies for instrumented tests
     // http://developer.android.com/intl/ja/training/testing/start/index.html#config-instrumented-tests
