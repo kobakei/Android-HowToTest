@@ -14,7 +14,8 @@ Android sample project to demonstrate how to test
 - Unit test
 - Unit test with Robolectric
 - Unit test with Robolectric and Dagger 2
-  - Mock Retrofit API clien
+  - Server dependent test (w/ Retrofit)
+  - TODO: Time dependent test (w/ ThreeTenABP)
 
 ## Integration test
 
