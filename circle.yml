@@ -11,6 +11,8 @@ dependencies:
 
 test:
   override:
+    - pwd
+  
     # Unit test
     - ./gradlew test
     
