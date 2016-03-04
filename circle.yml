@@ -13,16 +13,19 @@ dependencies:
 
 test:
   override:
-    - ./gradle assembleDebug -PdisablePreDex
+    # start the emulator
+    # this process takes a long time
+    - emulator -avd circleci-android22 -no-audio -no-window:
+        background: true
+        parallel: true
+
+    # Build
+    - ./gradlew assemble -PdisablePreDex
 
     # Unit test
     - ./gradlew test
 
-    # start the emulator
-    - emulator -avd circleci-android22 -no-audio -no-window:
-        background: true
-        parallel: true
-    # wait for it to have booted
+    # wait for emulator to have booted
     - circle-android wait-for-boot
     # run tests  against the emulator.
     - ./gradlew connectedAndroidTest
