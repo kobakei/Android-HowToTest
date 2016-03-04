@@ -25,6 +25,6 @@ test:
     # run tests  against the emulator.
     - ./gradlew connectedAndroidTest
     # copy the build outputs to artifacts
-    - cp -r Android-HowToTest/app/build/outputs $CIRCLE_ARTIFACTS
+    - cp -r app/build/outputs $CIRCLE_ARTIFACTS
     # copy the test results to the test results directory.
-    - cp -r Android-HowToTest/app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
+    - cp -r app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
