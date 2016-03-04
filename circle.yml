@@ -3,7 +3,7 @@ machine:
     version: oraclejdk8
   environment:
     JAVA_OPTS: "-Xms256m -Xmx512m"
-    ADB_INSTALL_TIMEOUT: 100 
+    ADB_INSTALL_TIMEOUT: 100
 
 dependencies:
   pre:
@@ -11,11 +11,11 @@ dependencies:
 
 test:
   override:
-    - pwd
-  
+    - ./gradle assembleDebug -PdisablePreDex
+
     # Unit test
     - ./gradlew test
-    
+
     # start the emulator
     - emulator -avd circleci-android22 -no-audio -no-window:
         background: true
