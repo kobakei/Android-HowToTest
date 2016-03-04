@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest;
+package io.github.kobakei.androidhowtotest.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import javax.inject.Inject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import io.github.kobakei.androidhowtotest.MyApplication;
+import io.github.kobakei.androidhowtotest.R;
 import io.github.kobakei.androidhowtotest.model.GitHubService;
 import io.github.kobakei.androidhowtotest.model.GitHubUseCase;
 import io.github.kobakei.androidhowtotest.model.Repo;

@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest;
+package io.github.kobakei.androidhowtotest.activity;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.filters.SdkSuppress;
@@ -15,6 +15,8 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import io.github.kobakei.androidhowtotest.activity.BrowserActivity;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

@@ -3,8 +3,8 @@ package io.github.kobakei.androidhowtotest.di;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import io.github.kobakei.androidhowtotest.AdditionActivity;
-import io.github.kobakei.androidhowtotest.ApiActivity;
+import io.github.kobakei.androidhowtotest.activity.AdditionActivity;
+import io.github.kobakei.androidhowtotest.activity.ApiActivity;
 import io.github.kobakei.androidhowtotest.model.GitHubUseCase;
 
 /**

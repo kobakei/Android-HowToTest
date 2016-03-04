@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest;
+package io.github.kobakei.androidhowtotest.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.github.kobakei.androidhowtotest.R;
 
 public class BrowserActivity extends AppCompatActivity {
 
