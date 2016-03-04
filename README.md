@@ -25,3 +25,6 @@ Android sample project to demonstrate how to test
 
 - UI test with Espresso
 - UI test with UI Automator
+- TODO: Integration for Service
+  - Note: IntentService cannot be tested well
+- TODO: Integration for ContentProvider
