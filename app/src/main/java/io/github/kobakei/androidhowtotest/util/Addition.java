@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.util;
 
 /**
  * Simple class to add two values.

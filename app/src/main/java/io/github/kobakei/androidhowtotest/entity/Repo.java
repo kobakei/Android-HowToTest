@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.entity;
 
 /**
  * Created by keisuke on 16/03/03.

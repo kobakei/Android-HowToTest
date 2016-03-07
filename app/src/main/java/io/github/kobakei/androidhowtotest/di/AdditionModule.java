@@ -4,7 +4,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import io.github.kobakei.androidhowtotest.model.Addition;
+import io.github.kobakei.androidhowtotest.util.Addition;
 
 /**
  * Dagger module to provide addition.

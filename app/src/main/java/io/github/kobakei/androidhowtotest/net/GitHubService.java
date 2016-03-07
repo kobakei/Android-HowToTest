@@ -1,7 +1,8 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.net;
 
 import java.util.List;
 
+import io.github.kobakei.androidhowtotest.entity.Repo;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

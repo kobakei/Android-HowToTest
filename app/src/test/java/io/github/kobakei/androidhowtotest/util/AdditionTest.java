@@ -1,9 +1,7 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.util;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-
-import io.github.kobakei.androidhowtotest.model.Addition;
 
 /**
  * Created by keisuke on 16/03/03.

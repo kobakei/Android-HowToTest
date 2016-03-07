@@ -5,7 +5,7 @@ import javax.inject.Singleton;
 import dagger.Component;
 import io.github.kobakei.androidhowtotest.activity.AdditionActivity;
 import io.github.kobakei.androidhowtotest.activity.ApiActivity;
-import io.github.kobakei.androidhowtotest.model.GitHubUseCase;
+import io.github.kobakei.androidhowtotest.usecase.GitHubUseCase;
 
 /**
  * Dagger component.

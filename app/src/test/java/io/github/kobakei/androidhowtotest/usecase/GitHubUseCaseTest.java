@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.usecase;
 
 import android.os.Build;
 
@@ -10,14 +10,13 @@ import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 import io.github.kobakei.androidhowtotest.BuildConfig;
 import io.github.kobakei.androidhowtotest.di.DaggerMyComponent;
 import io.github.kobakei.androidhowtotest.di.MockApiModule;
 import io.github.kobakei.androidhowtotest.di.MyComponent;
+import io.github.kobakei.androidhowtotest.usecase.GitHubUseCase;
 
 /**
  * Unit test of GitHubUseCase.

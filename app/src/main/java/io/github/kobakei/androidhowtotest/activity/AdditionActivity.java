@@ -13,7 +13,7 @@ import butterknife.OnClick;
 import io.github.kobakei.androidhowtotest.MyApplication;
 import io.github.kobakei.androidhowtotest.R;
 import io.github.kobakei.androidhowtotest.di.MyComponent;
-import io.github.kobakei.androidhowtotest.model.Addition;
+import io.github.kobakei.androidhowtotest.util.Addition;
 
 public class AdditionActivity extends AppCompatActivity {
 

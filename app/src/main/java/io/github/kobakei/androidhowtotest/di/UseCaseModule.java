@@ -4,8 +4,8 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import io.github.kobakei.androidhowtotest.model.GitHubService;
-import io.github.kobakei.androidhowtotest.model.GitHubUseCase;
+import io.github.kobakei.androidhowtotest.net.GitHubService;
+import io.github.kobakei.androidhowtotest.usecase.GitHubUseCase;
 
 /**
  * Dagger module to proviode use case (business logic).

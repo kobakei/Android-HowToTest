@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.util;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

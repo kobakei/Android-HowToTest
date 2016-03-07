@@ -7,8 +7,8 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import io.github.kobakei.androidhowtotest.model.GitHubService;
-import io.github.kobakei.androidhowtotest.model.Repo;
+import io.github.kobakei.androidhowtotest.net.GitHubService;
+import io.github.kobakei.androidhowtotest.entity.Repo;
 import retrofit2.Call;
 import retrofit2.http.Path;
 import retrofit2.mock.Calls;

@@ -1,4 +1,4 @@
-package io.github.kobakei.androidhowtotest.model;
+package io.github.kobakei.androidhowtotest.util;
 
 import android.os.Build;
 
@@ -9,7 +9,6 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 import io.github.kobakei.androidhowtotest.BuildConfig;
-import io.github.kobakei.androidhowtotest.model.PackageNameManager;
 
 import static junit.framework.Assert.assertEquals;
 
