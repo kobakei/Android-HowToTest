@@ -2,6 +2,8 @@ package io.github.kobakei.androidhowtotest;
 
 import android.app.Application;
 
+import com.jakewharton.threetenabp.AndroidThreeTen;
+
 import io.github.kobakei.androidhowtotest.di.DaggerMyComponent;
 import io.github.kobakei.androidhowtotest.di.MyComponent;
 
@@ -19,6 +21,8 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        AndroidThreeTen.init(this);
 
         // Create object graph for dependency injection.
         // Modules which are declared in MyComponent.java will be used.

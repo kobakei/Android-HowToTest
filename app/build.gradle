@@ -49,6 +49,9 @@ dependencies {
     testCompile 'com.squareup.retrofit2:retrofit-mock:2.0.0-beta4'
     compile 'com.google.code.gson:gson:2.4'
 
+    // Java8 time API backport
+    compile 'com.jakewharton.threetenabp:threetenabp:1.0.3'
+
     // -----------------------------------
     // dependencies for local test
     // -----------------------------------
