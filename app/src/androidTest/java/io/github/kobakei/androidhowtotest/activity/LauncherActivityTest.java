@@ -16,8 +16,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import io.github.kobakei.androidhowtotest.activity.BrowserActivity;
-
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -29,10 +27,10 @@ import static org.junit.Assert.assertTrue;
 @RunWith(AndroidJUnit4.class)
 @SdkSuppress(minSdkVersion = 18)
 @LargeTest
-public class BrowserActivityTest {
+public class LauncherActivityTest {
 
     @Rule
-    public ActivityTestRule<BrowserActivity> activityTestRule = new ActivityTestRule<>(BrowserActivity.class);
+    public ActivityTestRule<LauncherActivity> activityTestRule = new ActivityTestRule<>(LauncherActivity.class);
 
     private UiDevice uiDevice;
 
@@ -43,12 +41,12 @@ public class BrowserActivityTest {
 
     @Test
     public void onButtonClick_LaunchBrowser() {
-        UiObject2 goButton = uiDevice.findObject(By.text("Open browser").clazz(Button.class));
+        UiObject2 goButton = uiDevice.findObject(By.text("Open settings").clazz(Button.class));
         boolean result = goButton.clickAndWait(Until.newWindow(), 2000L);
         assertTrue(result);
 
         // Check if current app is chrome
-        UiObject2 currentApp = uiDevice.findObject(By.pkg("com.android.chrome"));
+        UiObject2 currentApp = uiDevice.findObject(By.pkg("com.android.settings"));
         assertNotNull(currentApp);
     }
 }

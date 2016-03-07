@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.button2)
     void onButton2Clicked() {
-        Intent intent = new Intent(this, BrowserActivity.class);
+        Intent intent = new Intent(this, LauncherActivity.class);
         startActivity(intent);
     }
 

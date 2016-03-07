@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.AdditionActivity" />
-        <activity android:name=".activity.BrowserActivity" />
+        <activity android:name=".activity.LauncherActivity" />
         <activity android:name=".activity.ApiActivity"></activity>
     </application>
 
