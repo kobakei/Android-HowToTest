@@ -3,7 +3,7 @@ package io.github.kobakei.androidhowtotest.di;
 import javax.inject.Singleton;
 
 import dagger.Component;
-import io.github.kobakei.androidhowtotest.activity.AdditionActivity;
+import io.github.kobakei.androidhowtotest.activity.CalculatorActivity;
 import io.github.kobakei.androidhowtotest.activity.ApiActivity;
 import io.github.kobakei.androidhowtotest.usecase.GitHubUseCase;
 
@@ -17,6 +17,6 @@ import io.github.kobakei.androidhowtotest.usecase.GitHubUseCase;
 public interface MyComponent {
     GitHubUseCase gitHubUseCase();
 
-    void inject(AdditionActivity target);
+    void inject(CalculatorActivity target);
     void inject(ApiActivity target);
 }

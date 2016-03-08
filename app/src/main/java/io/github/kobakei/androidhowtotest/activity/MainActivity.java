@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.button1)
     void onButton1Clicked() {
-        Intent intent = new Intent(this, AdditionActivity.class);
+        Intent intent = new Intent(this, CalculatorActivity.class);
         startActivity(intent);
     }
 

@@ -16,7 +16,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import io.github.kobakei.androidhowtotest.R;
-import io.github.kobakei.androidhowtotest.activity.AdditionActivity;
 
 /**
  * UI test with JUnit4 & Espresso.
@@ -24,10 +23,10 @@ import io.github.kobakei.androidhowtotest.activity.AdditionActivity;
  */
 @RunWith(AndroidJUnit4.class)
 @MediumTest
-public class AdditionActivityTest {
+public class CalculatorActivityTest {
 
     @Rule
-    public ActivityTestRule<AdditionActivity> activityTestRule = new ActivityTestRule<>(AdditionActivity.class);
+    public ActivityTestRule<CalculatorActivity> activityTestRule = new ActivityTestRule<>(CalculatorActivity.class);
 
     @Test
     public void onAddClicked_isCorrect() {

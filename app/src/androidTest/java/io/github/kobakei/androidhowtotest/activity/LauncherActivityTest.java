@@ -42,7 +42,7 @@ public class LauncherActivityTest {
     @Test
     public void onButtonClick_LaunchSettings() {
         UiObject2 goButton = uiDevice.findObject(By.text("Open settings").clazz(Button.class));
-        boolean result = goButton.clickAndWait(Until.newWindow(), 2000L);
+        boolean result = goButton.clickAndWait(Until.newWindow(), 5000L);
         assertTrue(result);
 
         // Check if current app is settings

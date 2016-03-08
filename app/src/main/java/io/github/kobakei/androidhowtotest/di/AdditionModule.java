@@ -4,7 +4,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import io.github.kobakei.androidhowtotest.util.Addition;
+import io.github.kobakei.androidhowtotest.util.Calculator;
 
 /**
  * Dagger module to provide addition.
@@ -18,7 +18,7 @@ public class AdditionModule {
 
     @Provides
     @Singleton
-    public Addition provideAddition() {
-        return new Addition();
+    public Calculator provideAddition() {
+        return new Calculator();
     }
 }
