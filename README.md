@@ -11,11 +11,10 @@ Android sample project to demonstrate how to test
 
 ### Samples
 
-- Unit test
-- Unit test with Robolectric
-- Unit test with Robolectric and Dagger 2
-  - Server dependent test (w/ Retrofit)
-  - TODO: Time dependent test (w/ ThreeTenABP)
+- [Unit test](https://github.com/kobakei/Android-HowToTest/blob/master/app/src/test/java/io/github/kobakei/androidhowtotest/util/CalculatorTest.java)
+- [Unit test with Robolectric](https://github.com/kobakei/Android-HowToTest/blob/master/app/src/test/java/io/github/kobakei/androidhowtotest/util/PackageNameManagerTest.java)
+- [Server dependent unit test (w/ Retrofit)](https://github.com/kobakei/Android-HowToTest/blob/master/app/src/test/java/io/github/kobakei/androidhowtotest/usecase/GitHubUseCaseTest.java)
+- [Time dependent unit test (w/ ThreeTenABP)](https://github.com/kobakei/Android-HowToTest/blob/master/app/src/test/java/io/github/kobakei/androidhowtotest/usecase/TimeUseCaseTest.java)
 
 ## Integration test
 
@@ -24,8 +23,8 @@ Android sample project to demonstrate how to test
 
 ### Samples
 
-- UI test with Espresso
-- UI test with UI Automator
+- [UI test with Espresso](https://github.com/kobakei/Android-HowToTest/blob/master/app/src/androidTest/java/io/github/kobakei/androidhowtotest/activity/CalculatorActivityTest.java)
+- [UI test with UI Automator](https://github.com/kobakei/Android-HowToTest/blob/master/app/src/androidTest/java/io/github/kobakei/androidhowtotest/activity/LauncherActivityTest.java)
 - TODO: Integration for Service
   - Note: IntentService cannot be tested well
 - TODO: Integration for ContentProvider
