@@ -40,12 +40,12 @@ public class LauncherActivityTest {
     }
 
     @Test
-    public void onButtonClick_LaunchBrowser() {
+    public void onButtonClick_LaunchSettings() {
         UiObject2 goButton = uiDevice.findObject(By.text("Open settings").clazz(Button.class));
         boolean result = goButton.clickAndWait(Until.newWindow(), 2000L);
         assertTrue(result);
 
-        // Check if current app is chrome
+        // Check if current app is settings
         UiObject2 currentApp = uiDevice.findObject(By.pkg("com.android.settings"));
         assertNotNull(currentApp);
     }
